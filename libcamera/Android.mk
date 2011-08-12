@@ -1,6 +1,6 @@
 # this is just a camera stub to link with, real one is copied from proprietary
 
-ifeq ($(TARGET_DEVICE),galaxytab)
+ifeq ($(findstring galaxytab, $(TARGET_DEVICE)),galaxytab)
 
 LOCAL_PATH:= $(call my-dir)
 

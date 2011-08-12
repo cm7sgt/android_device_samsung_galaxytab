@@ -107,3 +107,5 @@
 # for radio
 /dev/s3c2410_serial3      0660   radio      radio
 
+/dev/hotspot_event_monitoring 0660   system     system
+
