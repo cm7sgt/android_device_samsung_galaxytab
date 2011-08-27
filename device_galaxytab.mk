@@ -68,7 +68,8 @@ PRODUCT_LOCALES += hdpi
 # For emmc phone storage
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.phone_storage = 1 \
-    ro.additionalmounts=/mnt/emmc
+    ro.additionalmounts=/mnt/emmc \
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # For mobiledatainterfaces
 PRODUCT_PROPERTY_OVERRIDES += \
