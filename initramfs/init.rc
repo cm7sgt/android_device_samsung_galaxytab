@@ -461,6 +461,7 @@ service vold /system/bin/vold
 
 service netd /system/bin/netd
     socket netd stream 0660 root system
+    socket dnsproxyd stream 0660 root inet
 
 # for usb tethering
 service dnsmasq /system/bin/logwrapper /system/bin/dnsmasq -d
