@@ -87,12 +87,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     phone.ril.classname = com.android.internal.telephony.SamsungRIL
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/galaxytab/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p1-common/overlay
 
 # These are the OpenMAX IL configuration files
 PRODUCT_COPY_FILES += \
 	device/samsung/aries-common/sec_mm/sec_omx/sec_omx_core/secomxregistry:system/etc/secomxregistry \
-	device/samsung/galaxytab/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
+	device/samsung/p1-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # These are the OpenMAX IL modules
 PRODUCT_PACKAGES += \
@@ -117,10 +117,10 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    device/samsung/p1-common/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
-    $(LOCAL_PATH)/prebuilt/usr/keylayout/p1_keyboard.kl:system/usr/keylayout/p1_keyboard.kl \
-    $(LOCAL_PATH)/prebuilt/usr/keylayout/AT42QT602240_Touchscreen.kl:system/usr/keylayout/AT42QT602240_Touchscreen.kl
+    device/samsung/p1-common/prebuilt/usr/keylayout/p1_keyboard.kl:system/usr/keylayout/p1_keyboard.kl \
+    device/samsung/p1-common/prebuilt/usr/keylayout/AT42QT602240_Touchscreen.kl:system/usr/keylayout/AT42QT602240_Touchscreen.kl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/initramfs/init.smdkc110.rc:root/init.smdkc110.rc \
@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/mke2fs:utilities/mke2fs
+    device/samsung/p1-common/prebuilt/mke2fs:utilities/mke2fs
 
 PRODUCT_PACKAGES += \
     libaudio \
