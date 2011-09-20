@@ -27,12 +27,6 @@ KERNEL_DEFCONFIG()
 	make -C $KERNEL_SOURCE_DIR O=$KERNEL_BUILD_DIR LOCALVERSION= ARCH=arm p1_cm7_defconfig
 }
 
-KERNEL_DEFCONFIGL()
-{
-	echo running defconfig
-	make -C $KERNEL_SOURCE_DIR O=$KERNEL_BUILD_DIR LOCALVERSION= ARCH=arm p1_ltn_cm7_defconfig
-}
-
 KERNEL_MENUCONFIG()
 {
 	echo running menuconfig
