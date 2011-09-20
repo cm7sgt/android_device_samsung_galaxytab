@@ -1,5 +1,6 @@
 
-zip -9 tcm7beta.zip factoryfs.ext4 zImage dbdata.ext4 cache.ext4 boot.bin sbl.bin gt-p1000_mr.pit readme.txt
+cp ../kernel_ltn zImage_LTN
+zip -9 tcm7beta.zip factoryfs.ext4 zImage zImage_LTN dbdata.ext4 cache.ext4 boot.bin sbl.bin gt-p1000_mr.pit readme.txt
 
 
 

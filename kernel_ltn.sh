@@ -47,15 +47,16 @@ KERNEL_BUILD_MODULES()
 {
 	echo running build modules
 	make -j$CPU_JOB_NUM -C $KERNEL_SOURCE_DIR O=$KERNEL_BUILD_DIR LOCALVERSION= ARCH=arm CROSS_COMPILE=$TOOLCHAIN/$TOOLCHAIN_PREFIX modules
-	mkdir -p prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/fs/cifs/cifs.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/drivers/net/tun.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/crypto/ansi_cprng.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/drivers/scsi/scsi_wait_scan.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/drivers/misc/vibtonz/vibrator.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/drivers/bluetooth/bthid/bthid.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/drivers/net/wireless/bcm4329/bcm4329.ko prebuilt/modules
-	cp -v ${KERNEL_BUILD_DIR}/drivers/net/wireless/bcm4329/hotspot_event_monitoring.ko prebuilt/modules
+# it uses the same modules as GSM
+#	mkdir -p prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/fs/cifs/cifs.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/drivers/net/tun.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/crypto/ansi_cprng.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/drivers/scsi/scsi_wait_scan.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/drivers/misc/vibtonz/vibrator.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/drivers/bluetooth/bthid/bthid.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/drivers/net/wireless/bcm4329/bcm4329.ko prebuilt/modules
+#	cp -v ${KERNEL_BUILD_DIR}/drivers/net/wireless/bcm4329/hotspot_event_monitoring.ko prebuilt/modules
 }
 
 case $1 in
