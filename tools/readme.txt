@@ -43,6 +43,12 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+2011-09-20
+    Update to latest from git.
+    Merged P1000L/N kernel. P1000L kernel included in build.
+    Voodoo Sound update to V10. Switch to JHASH3 hash function in kernel.
+    Disable NEW_AP in Wifi driver, fix hotspot mode.
+
 2011-08-07
     Update to latest from git. Android 2.3.5.
     Added BLN kernel driver and LIGHT_ID_NOTIFICATIONS -> /sys/class/misc/backlightnotification/notification_led device to liblights. Big thanks to Neldar.
