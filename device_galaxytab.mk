@@ -64,11 +64,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/modelid_cfg.sh:system/bin/modelid_cfg.sh \
-    $(LOCAL_PATH)/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh
-
-
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/samsung/galaxytab/kernel
 else

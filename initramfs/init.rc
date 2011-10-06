@@ -17,6 +17,7 @@ loglevel 9
     export ANDROID_ROOT /system
     export ANDROID_ASSETS /system/app
     export ANDROID_DATA /data
+    export DOWNLOAD_CACHE /data/cache_download
     export EXTERNAL_STORAGE /mnt/sdcard
     export PHONE_STORAGE /mnt/emmc
     export ASEC_MOUNTPOINT /mnt/asec
@@ -246,16 +247,14 @@ loglevel 9
     chown system system /data/dalvik-cache
     chmod 0771 /data/dalvik-cache
 
-    #mkdir /cache/dalvik-cache 0771 system system
-    #chown system system /cache/dalvik-cache
-    #chmod 0771 /cache/dalvik-cache
+    # create system dalvik cache, it is unused anyway
+    mkdir /cache/dalvik-cache 0771 system system
+    chown system system /cache/dalvik-cache
+    chmod 0771 /cache/dalvik-cache
 
-# use dbdata partition for /cache/dalvik-cache
-# because stl11 is too small
-    mkdir /dbdata/dalvik-cache
-    chown system system /dbdata/dalvik-cache
-    chmod 0771 /dbdata/dalvik-cache
-    symlink /dbdata/dalvik-cache /cache/dalvik-cache
+    mkdir /data/cache_download 0771 system cache
+    chown system cache /data/cache_download
+    chmod 0771 /data/cache_download
 
     # create the lost+found directories, so as to enforce our permissions
     mkdir /data/lost+found 0770
