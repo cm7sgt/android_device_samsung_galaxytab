@@ -34,8 +34,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # For emmc phone storage
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.phone_storage = 1 \
-    ro.additionalmounts=/mnt/emmc \
-    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
+    ro.additionalmounts=/mnt/sdcard/external_sd \
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/sdcard/external_sd \
+    persist.sys.vold.switchexternal=1
 
 # For mobiledatainterfaces
 PRODUCT_PROPERTY_OVERRIDES += \
