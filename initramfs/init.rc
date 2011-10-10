@@ -591,10 +591,6 @@ service keystore /system/bin/keystore /data/misc/keystore
     group keystore
     socket keystore stream 666
 
-service tvout /system/bin/tvoutserver
-    user system
-    group system
-
 service dumpstate /system/bin/dumpstate -s
     socket dumpstate stream 0660 shell log
     disabled
