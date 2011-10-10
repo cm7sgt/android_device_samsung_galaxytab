@@ -43,6 +43,11 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+    move download cache to /data/cache_download and system dalvik cache to data, it should fix download issues with large APKs
+    fix bluetooth keyboard keypad rotation issue
+    move touchscreen event rotation to kernel to to clean up frameworks/base
+    use switchable pair and new stacked mounts in vold for /mnt/sdcard and and /mnt/sdcard/external_sd
+
 2011-09-20
     Update to latest from git.
     Merged P1000L/N kernel. P1000L kernel included in build.
