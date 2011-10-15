@@ -54,7 +54,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/initramfs/init.rc:root/init.rc \
     $(LOCAL_PATH)/initramfs/init.gt-p1000.rc:recovery/root/init.gt-p1000.rc \
     $(LOCAL_PATH)/initramfs/lpm.rc:root/lpm.rc \
     $(LOCAL_PATH)/initramfs/ueventd.rc:root/ueventd.rc \
