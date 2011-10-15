@@ -45,13 +45,13 @@ TARGET_BOARD_PLATFORM := s5pc110
 # ends up in ro.product.board
 TARGET_BOOTLOADER_BOARD_NAME := GT-P1000
 # override recovery init.rc with the default init.rc
-TARGET_RECOVERY_INITRC := device/samsung/galaxytab/initramfs/init.rc
+TARGET_RECOVERY_INITRC := device/samsung/p1-common/initramfs/init.rc
 BOARD_PROVIDES_BOOTMODE := true
 
 # Releasetools
 TARGET_PROVIDES_RELEASETOOLS := true
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/galaxytab/releasetools/aries_ota_from_target_files
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/galaxytab/releasetools/aries_img_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/p1-common/releasetools/aries_ota_from_target_files
+TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/p1-common/releasetools/aries_img_from_target_files
 TARGET_OTA_ASSERT_DEVICE := galaxytab,GT-P1000,SGH-T849,SGH-I897
 
 # Bluetooth
