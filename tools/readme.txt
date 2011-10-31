@@ -43,6 +43,11 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+2011-10-31
+    update to latest from git. we are little past 7.1.0.
+    fix key setting for AP mode
+    new init.rc/init.gt-p1000.rc unified with CDMA device
+
 2011-10-09
     move download cache to /data/cache_download and system dalvik cache to data, it should fix download issues with large APKs
     fix bluetooth keyboard keypad rotation issue
