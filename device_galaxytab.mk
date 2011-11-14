@@ -46,19 +46,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    fmradio.device = fmradio
 
-PRODUCT_PACKAGES += \
-    overlay.GT-P1000 \
-    lights.GT-P1000
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_COPY_FILES += \
-    device/samsung/p1-common//initramfs/init.rc:root/init.rc \
-    $(LOCAL_PATH)/initramfs/init.gt-p1000.rc:recovery/root/init.gt-p1000.rc \
+    $(LOCAL_PATH)/initramfs/init.gt-p1000.rc:root/init.gt-p1000.rc \
+    $(LOCAL_PATH)/initramfs/init.gt-p1000.rc:root/init.gt-p1000n.rc \
+    $(LOCAL_PATH)/initramfs/init.gt-p1000l.rc:root/init.gt-p1000l.rc \
+    $(LOCAL_PATH)/initramfs/ueventd.gt-p1000l.rc:root/ueventd.gt-p1000l.rc \
     $(LOCAL_PATH)/initramfs/lpm.rc:root/lpm.rc \
-    $(LOCAL_PATH)/initramfs/ueventd.rc:root/ueventd.rc \
-    $(LOCAL_PATH)/initramfs/recovery.rc:recovery/root/recovery.rc
+    $(LOCAL_PATH)/initramfs/recovery.rc:root/recovery.rc
 
 
 # GSM APN list override one in common_full

@@ -46,6 +46,7 @@ TARGET_BOARD_PLATFORM := s5pc110
 TARGET_BOOTLOADER_BOARD_NAME := GT-P1000
 # override recovery init.rc with the default init.rc
 TARGET_RECOVERY_INITRC := device/samsung/p1-common/initramfs/init.rc
+BOARD_USES_COMBINED_RECOVERY := true
 BOARD_PROVIDES_BOOTMODE := true
 
 # Releasetools

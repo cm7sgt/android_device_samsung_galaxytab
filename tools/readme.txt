@@ -43,6 +43,11 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+2011-11-02
+    use android socket for wpa_supplicant control interface. anyone upgrading to this version please delete their /data/misc/wifi/wpa_supplicant.conf
+    thanks to jt1134, removed extra field in mfc interface in kernel which prevented it from working with aries OMX libraries
+    updated media_profiles.xml to expose 1024x600 and 800x600 resolutions for camcorder. its not perfect but at least video recording works now. front cam produces broken video.
+
 2011-10-31
     update to latest from git. we are little past 7.1.0.
     fix key setting for AP mode
