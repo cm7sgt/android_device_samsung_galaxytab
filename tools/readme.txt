@@ -28,10 +28,10 @@ Voice: OK
 3G Data: OK
 Wifi: OK
 BT: OK
-GPS: working
+GPS: OK
 Lights: OK
 Sensors: OK
-Camera: mostly OK (video recording broken)
+Camera: mostly OK (video recording broken on front camera)
 
 Issues and workarounds
 * Stuck on CM boot ani after flash
@@ -43,6 +43,10 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+2012-02-19
+    Update to latest from CM7 git. set default DPI to 240 to fix market issues, advanced users can set any DPI they want anyway.
+    Go back to stock dialer layout because it has changed a lot.
+
 2011-11-02
     use android socket for wpa_supplicant control interface. anyone upgrading to this version please delete their /data/misc/wifi/wpa_supplicant.conf
     thanks to jt1134, removed extra field in mfc interface in kernel which prevented it from working with aries OMX libraries
