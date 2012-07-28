@@ -43,6 +43,8 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+2012-07-28
+    Update to latest from CM7 git.
 2012-02-19
     Update to latest from CM7 git. set default DPI to 240 to fix market issues, advanced users can set any DPI they want anyway.
     Go back to stock dialer layout because it has changed a lot.
