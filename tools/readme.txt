@@ -43,6 +43,8 @@ Issues and workarounds
     If that doesnt help try "adb shell stop hciattach" Sometimes hciattach service gets stuck when starting.
 
 Changelog:
+2012-08-05
+    Fixed Bluetooth MAC address issue. Now it is read correctly from EFS.
 2012-07-28
     Update to latest from CM7 git.
 2012-02-19
